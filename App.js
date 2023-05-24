@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
-import { userFonts } from 'expo-font';
+import { useFonts } from 'expo-font';
 import { Home } from './screens/Home';
 import { Details } from './screens/Details';
 
@@ -17,6 +17,10 @@ const theme = {
 }
 
 const App = () => {
+	const [ loaded ] = useFonts( {
+
+	} )
+
   return (
 		<NavigationContainer theme={ theme }>
 			<Stack.Navigator screenOptions={ { headerShown: false } } initialRouteName='Home'>
