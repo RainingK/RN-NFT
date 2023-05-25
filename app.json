@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "39fe6152-b928-4ae5-99e4-2bea0a49aec7"
+      }
+    },
+    "owner": "rainingk"
   }
 }
