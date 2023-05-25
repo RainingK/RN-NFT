@@ -2,6 +2,7 @@ import { View, Text, Image } from "react-native"
 import { COLORS, SHADOWS, SIZES, assets } from '../constants';
 import { useNavigation } from "@react-navigation/native";
 import { CircleButton } from "./Button";
+import { SubInfo } from "./SubInfo";
 
 const NFTCard = ( { data } ) => {
 	const navigation = useNavigation();
@@ -28,7 +29,7 @@ const NFTCard = ( { data } ) => {
 
 				<CircleButton imgUrl={ assets.heart } right={ 10 } top={ 10 } />
 			</View>
-			{/* <Text>NFTCard</Text> */ }
+			<SubInfo />
 		</View>
 	)
 }
