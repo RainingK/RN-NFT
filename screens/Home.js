@@ -1,7 +1,10 @@
-import { Text } from 'react-native';
+import { SafeAreaView, StatusBar, Text } from 'react-native';
+import { COLORS, NFTData } from '../constants';
+import { NFTCard, HomeHeader, FocusedStatusBar } from '../components';
 
 export const Home = () => {
 	return (
-		<Text>Home</Text>
+		<SafeAreaView style={ { flex: 1 } }>
+		</SafeAreaView>
 	)
 }
