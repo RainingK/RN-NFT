@@ -3,7 +3,7 @@ name: website
 on:
   push:
     branches:
-      - main
+      - deploy-showcase-github-pages
 
   workflow_dispatch:
 
