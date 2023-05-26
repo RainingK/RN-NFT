@@ -28,7 +28,7 @@ jobs:
       - name: 📜 Build Project
         run: |
           cd showcase
-          npm build
+          npm run build
 
       - name: 🚀 Deploy To Pages
         uses: peaceiris/actions-gh-pages@v3
