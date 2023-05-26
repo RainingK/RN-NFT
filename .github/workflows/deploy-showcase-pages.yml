@@ -24,3 +24,8 @@ jobs:
         run: |
           cd showcase
           npm install
+
+      - name: 🚀 Deploy To Pages
+        run: |
+          cd showcase
+          npm run deploy
