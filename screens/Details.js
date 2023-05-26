@@ -1,5 +1,5 @@
 import { FlatList, Image, SafeAreaView, StatusBar, Text, View } from 'react-native';
-import { COLORS, SHADOWS, SIZES, assets } from '../constants';
+import { COLORS, FONTS, SHADOWS, SIZES, assets } from '../constants';
 import { CircleButton, DetailsBid, DetailsDescription, FocusedStatusBar, RectButton, SubInfo } from '../components';
 import React from 'react';
 
@@ -68,6 +68,16 @@ export const Details = ( { route, navigation } ) => {
 
 						<View style={ { padding: SIZES.font } }>
 							<DetailsDescription data={ data } />
+
+							{ data.bids.length > 0 && (
+								<Text style={ {
+									fontSize: SIZES.font,
+									fontFamily: FONTS.semiBold,
+									color: COLORS.primary
+								} }>
+									Current Bid
+								</Text>
+							) }
 						</View>
 					</React.Fragment>
 				) }
