@@ -1,5 +1,5 @@
 import { View, Text, Image } from "react-native"
-import { COLORS, SIZES, assets } from "../constants";
+import { COLORS, FONTS, SIZES, assets } from "../constants";
 
 const HomeHeader = () => {
 	return (
@@ -30,6 +30,21 @@ const HomeHeader = () => {
 						style={ { position: 'absolute', width: 15, height: 15, bottom: 0, right: 0 } }
 					/>
 				</View>
+			</View>
+
+			<View style={ { marginVertical: SIZES.font } }>
+				<Text style={ {
+					fontFamily: FONTS.regular,
+					fontSize: SIZES.small,
+					color: COLORS.white
+				} }>Hello, Victoria 👋</Text>
+
+				<Text style={ {
+					fontFamily: FONTS.bold,
+					fontSize: SIZES.large,
+					color: COLORS.white,
+					marginTop: SIZES.base / 2
+				} }>Let's find a masterpiece</Text>
 			</View>
 		</View>
 	)
