@@ -3,7 +3,7 @@ name: Deploy Showcase Website
 on:
   push:
     branches:
-      - deploy-showcase-github-pages
+      - master
 
   workflow_dispatch:
 
@@ -25,7 +25,7 @@ jobs:
           cd showcase
           npm install
       
-      - name: 📜 Build Project
+      - name: 🔨 Build Project
         run: |
           cd showcase
           npm run build
