@@ -24,11 +24,14 @@ jobs:
         run: |
           cd showcase
           npm install
+      
+      - name: 📜 Build Project
+        run: |
+          cd showcase
+          npm build
 
       - name: 🚀 Deploy To Pages
-        run: |
-          # git config --global user.email ${{ secrets.MY_EMAIL }}
-          # git config --global user.name ${{ secrets.MY_NAME }} 
-          # git remote set-url origin https://${{ secrets.MY_NAME }}:${{ secrets.GH_SECRET }}@github.com/RainingK/RN-NFT.git 
-          cd showcase
-          npm run deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./showcase/build
