@@ -1,6 +1,11 @@
 name: website
 
-on: push
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
 
 jobs:
   publish:
