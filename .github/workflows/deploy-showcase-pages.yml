@@ -7,6 +7,8 @@ on:
 
   workflow_dispatch:
 
+permissions: write-all
+
 jobs:
   Deploy-To-Pages:
     runs-on: ubuntu-latest
