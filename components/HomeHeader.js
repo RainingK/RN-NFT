@@ -59,7 +59,7 @@ const HomeHeader = ( { onSearch } ) => {
 				} }>
 					<Image
 						source={ assets.search }
-						resizeMethod="contain"
+						resizeMode="contain"
 						style={ { width: 20, height: 20, marginRight: SIZES.base } }
 					/>
 					<TextInput
