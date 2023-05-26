@@ -8,7 +8,7 @@ on:
 #   workflow_dispatch:
 
 jobs:
-  Deploy To Pages:
+  Deploy-To-Pages:
     runs-on: ubuntu-latest
     steps:
       - name: 🏗 Checkout
