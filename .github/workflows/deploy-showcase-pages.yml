@@ -27,8 +27,8 @@ jobs:
 
       - name: 🚀 Deploy To Pages
         run: |
-          git config --global user.email ${{ secrets.MY_EMAIL }}
-          git config --global user.name ${{ secrets.MY_NAME }} 
+          # git config --global user.email ${{ secrets.MY_EMAIL }}
+          # git config --global user.name ${{ secrets.MY_NAME }} 
           # git remote set-url origin https://${{ secrets.MY_NAME }}:${{ secrets.GH_SECRET }}@github.com/RainingK/RN-NFT.git 
           cd showcase
           npm run deploy
