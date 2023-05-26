@@ -7,11 +7,6 @@ on:
 
   workflow_dispatch:
 
-permissions:
-  actions: write
-  pull-requests: write
-  pages: write
-
 jobs:
   Deploy-To-Pages:
     runs-on: ubuntu-latest
