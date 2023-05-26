@@ -8,8 +8,14 @@ on:
 #   workflow_dispatch:
 
 jobs:
-  publish:
+  Deploy To Pages:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 🏗 Checkout
         uses: actions/checkout@v3
+
+      - name: 🏗 Install Node
+        uses: actions/setup-node@v3
+        with: 
+          node-version: 16.x
+          cache: npm
